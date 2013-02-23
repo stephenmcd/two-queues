@@ -27,7 +27,6 @@ def run_clients(lang, *args):
     if "--redis" not in args:
         broker = Popen(popen_args("run_broker.%s" % lang), stderr=PIPE)
     args = popen_args("test_client.%s" % lang, *args)
-    args.append("--num-seconds=3")
     results = []
     num_runs = cpu_count() * 2
     print " ".join(args)
