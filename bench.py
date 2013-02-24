@@ -22,7 +22,7 @@ def run_clients(lang, *args):
     """
     Runs the test_client program for Python or Go, for the range
     from 1 to cpus * 2 as the number of clients, returning the
-    mediam messsages per second for each.
+    median messsages per second for each.
     """
     if "--redis" not in args:
         broker = Popen(popen_args("run_broker.%s" % lang), stderr=PIPE)
