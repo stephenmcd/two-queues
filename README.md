@@ -1,12 +1,37 @@
 A Tale of Two Queues
 ====================
 
-Related source code for my blog post [A Tale of Two Queues][1],
-benchmarking [Redis][2] and [ZeroMQ][3] pub-sub, using [Python][4]
-and Google's [Go language][5].
+Related source code for my blog post
+[A Tale of Two Queues](http://blog.jupo.org/2013/02/23/a-tale-of-two-queues/),
+benchmarking [Redis](http://redis.io) and [ZeroMQ](http://www.zeromq.org)
+pub-sub, using [Python](http://python.org) and Google's
+[Go language](http://golang.org).
 
-[1]: http://blog.jupo.org/2013/02/23/a-tale-of-two-queues/
-[2]: http://redis.io
-[3]: http://www.zeromq.org
-[4]: http://python.org
-[5]: http://golang.org
+Software and Libraries
+======================
+
+Following are the software and library requirements for running these
+benchmarks, using [homebrew](http://mxcl.github.com/homebrew) for OSX,
+[pip](http://www.pip-installer.org) for Python and [go get](
+http://golang.org/cmd/go/#hdr-Download_and_install_packages_and_dependencies)
+for Go. Installation should be similar on various Linuxes using their respective
+package managers rather than homebrew. You'll also need to run Redis once
+installed.
+
+    $ brew install zeromq [1]
+    $ brew install redis [2]
+    $ brew install gnuplot [3]
+    $ pip install pyzmq [4]
+    $ pip install redis [5]
+    $ pip install hiredis [6]
+    $ go get github.com/garyburd/redigo/redis [7]
+    $ go get github.com/alecthomas/gozmq [8]
+
+1. <http://www.zeromq.org>
+2. <http://redis.io>
+3. <http://www.gnuplot.info>
+4. <https://github.com/zeromq/pyzmq>
+5. <https://github.com/andymccurdy/redis-py>
+6. <https://github.com/pietern/hiredis-py>
+7. <https://github.com/garyburd/redigo>
+8. <https://github.com/alecthomas/gozmq>
