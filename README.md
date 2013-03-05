@@ -35,3 +35,14 @@ installed.
 6. <https://github.com/pietern/hiredis-py>
 7. <https://github.com/garyburd/redigo>
 8. <https://github.com/alecthomas/gozmq>
+
+Contributions
+=============
+
+Here are some interesting additions others have contributed:
+
+  * [Elixir on the Erlang VM](https://github.com/stephenmcd/two-queues/pull/2)
+  * [Redis 2.6.10 vs ZeroMQ 3.2.3](https://github.com/stephenmcd/two-queues/issues/1)
+
+
+
