@@ -100,7 +100,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     channels = [str(i) for i in range(args.num_channels)]
 
-    # Create publisher/subscriber goroutines, pausing to allow
+    # Create publisher/subscriber workers, pausing to allow
     # publishers to hit full throttle
     run_workers(publisher)
     time.sleep(1)
