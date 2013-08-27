@@ -36,8 +36,8 @@ type RedisClient struct {
 
 // ZMQ client - just defines the pub and sub ZMQ sockets.
 type ZMQClient struct {
-	pub zmq.Socket
-	sub zmq.Socket
+	pub *zmq.Socket
+	sub *zmq.Socket
 }
 
 // Returns a new Redis client. The underlying redigo package uses
